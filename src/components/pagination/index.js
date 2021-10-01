@@ -33,7 +33,6 @@ export const Pagination = ({ onChange, pageCount }) => {
         page={page}
         size="large"
         shape="rounded"
-        onChange={onChange}
         color="primary"
         renderItem={(item) => {
           let component;

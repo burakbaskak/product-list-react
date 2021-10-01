@@ -7,10 +7,8 @@ import * as serviceWorker from "./serviceWorker";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import theme from "./theme";
 
-if (process.env.NODE_ENV === "development") {
-  const { worker } = require("./mocks/browser");
-  worker.start();
-}
+const { worker } = require("./mocks/browser");
+worker.start();
 
 ReactDOM.render(
   <React.StrictMode>
