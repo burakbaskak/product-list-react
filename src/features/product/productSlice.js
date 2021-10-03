@@ -27,7 +27,6 @@ const filterProducts = ({
   }
 
   if (tags.indexOf(-1) < 0) {
-    console.log("tags", tags);
     list = list.filter(
       (item) => item.tags.filter((tag) => tags.includes(tag)).length > 0
     );
